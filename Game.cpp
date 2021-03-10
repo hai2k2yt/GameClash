@@ -5,6 +5,7 @@
 #include<cstdlib>
 #include<ctime>
 
+//
 using namespace std;
 
 //các struct của xúc xắc (mẫu)
@@ -14,33 +15,30 @@ struct dice
     void print()
     {
         switch (number)
-        {
-        case 1:
-            cout<<"*"<<endl;
-            break;
-        case 2:
-            cout<<"* *"<<endl;
-            break;
-        case 3:
-            cout<<"* * *"<<endl;
-            break;
-        case 4:
-            cout<<"* *"<<endl;
-            cout<<endl;
-            cout<<"* *"<<endl;
-            break;
-        case 5:
-            cout<<"* *"<<endl;
-            cout<<" * "<<endl;
-            cout<<"* *"<<endl;
-        case 6:
-            cout<<"* *"<<endl;
-            cout<<endl;
-            cout<<"* *"<<endl;
-            cout<<endl;
-            cout<<"* *"<<endl;
-            break;                
-        }
+    {
+    case 1:
+        cout << "*\n";
+        break;
+    case 2:
+        cout << "* *\n";
+        break;
+    case 3:
+        cout << "* * *\n";
+        break;
+    case 4:
+        cout << "* *\n"
+             << "* *\n";
+        break;
+    case 5:
+        cout << "* *\n"
+             << " * \n"
+             << "* *\n";
+        break;
+    case 6:
+        cout << "* *\n"
+             << "* *\n"
+             << "* *\n";
+        break;
     }
 };
 
@@ -87,7 +85,7 @@ struct defenderdice
     }
 };
 
-void ClashGame()
+void ClashGame()//cho vào file txt
 {
     cout<<endl;
     cout<<"Demo CLASH"<<endl<<endl<<endl;
@@ -99,7 +97,7 @@ void ClashGame()
     cout<<"Type a number to choose: ";
 }
 
-void Print_Instructions()
+void Print_Instructions() //cho vào file txt
 {
     cout<<"Instructions"<<endl;
     cout<<"----------------------------"<<endl;
